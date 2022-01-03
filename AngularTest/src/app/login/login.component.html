@@ -1,1 +1,15 @@
 <p>login works!</p>
+
+<div class="LoginComponent"></div>
+<div class="Login">
+    <input type="text" id="username" autocomplete="off" [(ngModel)]="name" placeholder="User ID">
+    <br>
+    <br>
+    <input type="password" id="password" autocomplete="off" [(ngModel)]="password" placeholder="Password">
+    <br>
+    <br>
+    <button id="Loginbutton" (click)="login()">Login</button>
+    <br>
+    <button id="GetHelp" >Get Started</button>
+    <label style="color: red;">{{message}}</label>
+</div>
